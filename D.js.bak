@@ -409,7 +409,7 @@ function randomNomor(min, max = null) {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
                             "mimetype": "image/jpeg",
-                            "caption": `[DEFFBOTZ]`,
+                            "caption": `[BOTZ]`,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
                             "height": 1080,
@@ -1160,11 +1160,11 @@ console.log(color('[ CMD ]'), color(time, 'yellow'), color(`${command} [${args.l
 addBalance(sender, randomNomor(80), balance)
 ////=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
 let spam1 = `𝙹𝚊𝚗𝚐𝚊𝚗 𝚜𝚙𝚊𝚖 𝚢𝚊 𝚔𝚊𝚔\n𝙱𝚎𝚛𝚒𝚔𝚊𝚗 𝚓𝚎𝚍𝚊 3 𝚍𝚎𝚝𝚒𝚔/𝚙𝚎𝚛𝚒𝚗𝚝𝚊𝚑`
-let spam2 = 'Deffbotz🥰'
+let spam2 = '𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ'
 let spam3 = [{
 buttonId: `${prefix}maap`,
 buttonText: {
-displayText: `💈𝘔𝘢𝘢𝘧  `,
+displayText: ` SAYA BABU 𝕭𝖔𝖙 • Andii² ༢࿔ྀ `,
 },
 type: 1,}]
 if (isCmd && msgFilter.isFiltered(from)) {
@@ -3546,35 +3546,12 @@ case "totag":
 case 'rules':
 anjeng = `
 「	RULES BOT   」	
-
-1.teks dan nama pengguna whatsapp
-anda akan kami simpan di dalam
-server selama bot aktif
-2.data akan di hapus ketika bot offline
-3.kami tidak menyimpan
-gambar,video,file,audio,dan dokumen
-yang anda kirim
-4.kami tidak akan pernah meminta
-anda untuk memberikan informasi
-pribadi
-5.jika menemukan bug/error silahkan
-langsung lapor ke owner bot
-6.jangan spam bot,sangsi block
-7.jangan telepon bot,sangsi block
-permanen
-8.apapun yang anda perintahkan
-pada bot ini,KAMI TIDAK AKAN
-BERTANGGUNG JAWAB!
-TERIMAKASIH TELAH
-MENGGUNAKAN BOT KAMI
-Owner DEFFBOTZ:
-
-wa.me/6289501060783`
-sendButMessage(from, anjeng, `Baca rulesnya!, Jangan di baca doang, Patuhi juga ajg❗`, [
+Ngapain Bang?`
+sendButMessage(from, anjeng, `Muka Lu, Kaya Kntl`, [
 {
 buttonId: `${prefix} command`,
 buttonText: {
-displayText: `💾MENU `,
+displayText: `🎲MENU `,
 },
 type: 1,
 },]);
