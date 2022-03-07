@@ -1,9 +1,10 @@
 //╔═╦═══• •✠•❀•✠ • •════╗
 //║✧ུ║        「 INFO CREATOR」                     
-//║✧ུ║ུNamaBot : *F*             
+//║✧ུ║ུNama : *Daffa Yudhistira*
+//║✧ུ║ུNamaBot : *DEFFBOTZ*             
 //║✧ུ║ུTQTO : *ALL CREATOR BOT*             
 //║✧ུ║ུTQTO : *PENYEDIA APIKEY DISINI*
-//║✧ུ║ུYT : 「 F ツ 」
+//║✧ུ║ུYT : 「 DEFFBOTZZ ツ 」
 //╚═╩═══• •✠•❀•✠ • •════╝
 //                    StayHalalNoBully
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
@@ -1990,11 +1991,6 @@ case 'kues': case 'quest': case 'misi':
 				reply('Surat Sukses Dikirim')
 				break
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
-case 'sc': case 'script':
-reply('https://youtube.com/channel/UCSAcYW8MkFyaVQz9asa3q5Q') //Kalo punya otak jangan diubah ya adik²
-break
-//=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
-			
 case 'ocr': 
 					// Fix Case By Wahyu/Ganss⛔
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2500,7 +2496,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 ┃╠${prefix}level
 ┃╠${prefix}leaderboards
 ┃╚═════════════════✪
-┗━━━「 BOT-WHATSAPP 」━━━⭓
+┗━━━「 BOT 」━━━⭓
     `
   , imageMessage: imageMsg,
     buttons: buttons,
