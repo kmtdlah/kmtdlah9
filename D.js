@@ -2392,22 +2392,15 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
     contentText: `${lol}`,
     footerText:`
 ┌─❖
-│*「 MAIN MENU 」*
-└┬❖ *「 DEFFBOTZZ 」*
-┌┤✑  *>request* <request ke owner>
-││✑  *>requestdev* <request ke developer>
-││✑  *>report* <lapor bug syg>
-│└───────────────┈ ⳹
-│ *「 ABOUT BOT 」*
+│ *「 BOT 」*
 │✙ *${prefix}runtime*
 │✙ *${prefix}speed* 
-│✙ *${prefix}script* 
 │✙ *${prefix}owner* 
 │✙ *${prefix}rules*
 └─────────────────┈ ⳹
 
-┏━━━━━「 DEFFBOTZ 」━━━━━━⭓ 
-┃╔═══════════✪「 OWNER 」	        
+
+╔═══════════✪「 OWNER 」	        
 ┃╠${prefix}broadcast
 ┃╠${prefix}broadcast2
 ┃╠${prefix}broadcast3
