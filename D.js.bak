@@ -200,6 +200,7 @@ module.exports = deff = async (deff, mek) => {
 		let command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
           budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 		let args = body.trim().split(/ +/).slice(1)
+	     let v = args.join(' ')
 		hit_today.push(command)
 		let arg = body.substring(body.indexOf(' ') + 1)
 		let messagesD = pes.slice(0).trim().split(/ +/).shift().toLowerCase()
@@ -1213,14 +1214,14 @@ quoted: mek, caption: teks
             break*/
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×𝘤
 case 'requestdev':
-      if (args.length < 1) return reply(`Ketik ${prefix}request [fiturnya] [Error Nya Gimana]`) 
+      if (args.length < 1) return reply(`Ketik ${prefix}request [fiturnya] [contohnya]`) 
       reply('Terima Kasih Telah Request Pada Pada Developer, ')
-      deff.sendMessage(`6289501060783@s.whatsapp.net`,`*Bug Report:* ${v}`, text)
+      deff.sendMessage(`6289501060783@s.whatsapp.net`,`*Request :* ${v}`, text) //Jangan diubah bang
       break
 case 'request':
       if (args.length < 1) return reply(`Ketik ${prefix}request [fiturnya] [Contohnya kayak mana]`) 
       reply('Terima Kasih Telah Request Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
-      deff.sendMessage(`${control.NomorOwner}@s.whatsapp.net`,`*Bug Report:* ${v}`, text)
+      deff.sendMessage(`${control.NomorOwner}@s.whatsapp.net`,`*Request :* ${v}`, text)
       break      
 case 'report':
       if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`)       
@@ -1232,7 +1233,7 @@ case 'leaderboard': //Cek Leaderboard
        case 'leaderboards':
               if (!isGroup) return reply(mess.only.group)
               const resp = _level
-            _level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
+             _level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
               let leaderboard =  '-----[ *LEADERBOARD* ]----\n\n'
               try {
               for (let i = 0; i < 10; i++) {
@@ -1301,7 +1302,7 @@ case 'leaderboard': //Cek Leaderboard
 }
               buffer = await getBuffer(`https://api.lolhuman.xyz/api/rank?apikey=Deffbotz&img=${profilePic}&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${pushname}&level=${userLevel}&ranking=${Number(userRank)}&currxp=${userXp}&xpneed=${requiredXp}`)
               teks = `*「 LEVEL 」*\n\n➸ *Nama :* ${pushname}\n➸ *Xp :* ${userXp} / ${requiredXp}\n➸ *Level :* ${userLevel}\n➸ *Role*: *${role}*\n\n*Note : Kumpulin Xp Jika Ingin Menaikkan Level*`
-              buttons = [{ buttonId: `${prefix}mining`, buttonText: { displayText: 'MINING' }, type: 1 },{ buttonId: `${prefix}leaderboard`, buttonText: { displayText: 'LEADEBOARD' },type:1}]
+              buttons = [{ buttonId: `${prefix}claim`, buttonText: { displayText: 'CLAIM' }, type: 1 },{ buttonId: `${prefix}leaderboard`, buttonText: { displayText: 'LEADEBOARD' },type:1}]
               imageMsg = (await deff.prepareMessageMedia(buffer, "imageMessage", { thumbnail: buffer, })).imageMessage
               buttonsMessage = {footerText:'follow @deff_ads', imageMessage: imageMsg,
               contentText:`${teks}`,buttons,headerType:4}
@@ -2397,7 +2398,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
     footerText:`
 ┌─❖
 │*「 MAIN MENU 」*
-└┬❖ *「 Self And Public」*
+└┬❖ *「 DEFFBOTZZ 」*
 ┌┤✑  *>request* <request ke owner>
 ││✑  *>requestdev* <request ke developer>
 ││✑  *>report* <lapor bug syg>
