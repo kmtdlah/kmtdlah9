@@ -275,7 +275,7 @@ module.exports = deff = async (deff, mek) => {
 	   let fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `「	BOT WHATSAPP   」	`, 'jpegThumbnail': fs.readFileSync(`./gambar/thumb.jpg`)}}}
 	   let fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`「	BOT WHATSAPP   」	`, "h": `Hmm`,'seconds': '99999', 'caption': `「	BOT WHATSAPP   」	`, 'jpegThumbnail': fs.readFileSync(`./gambar/thumb.jpg`)}}}
 	   let floc = {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `「	BOT WHATSAPP   」	`,jpegThumbnail: fs.readFileSync(`./gambar/thumb.jpg`)}}}
-	   let fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `@BY DEFF`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;@BY DEFF,;;;\nFN:@BY DEFF,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`./gambar/thumb.jpg`), thumbnail: fs.readFileSync(`./gambar/thumb.jpg`),sendEphemeral: true}}}
+	   let fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `6283136505591-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `@𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;@𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ,;;;\nFN:@BY 𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync(`./gambar/thumb.jpg`), thumbnail: fs.readFileSync(`./gambar/thumb.jpg`),sendEphemeral: true}}}
 	   var fakeReplyList = ['ftroli', 'fdoc', 'fvn', 'fgif', 'fgclink', 'fvideo', 'floc', 'fkontak']
 	   var fakeReply = fakeReplyList[Math.floor(Math.random() * fakeReplyList.length)];
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
@@ -1164,7 +1164,7 @@ let spam2 = '𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ'
 let spam3 = [{
 buttonId: `${prefix}maap`,
 buttonText: {
-displayText: ` SAYA BABU 𝕭𝖔𝖙 • Andii² ༢࿔ྀ `,
+displayText: ` SAYA BABU 𝕭𝖔𝖙 • Andii ༢࿔ྀ `,
 },
 type: 1,}]
 if (isCmd && msgFilter.isFiltered(from)) {
@@ -2354,7 +2354,7 @@ case 'public':
 case 'menu':
 case 'help':
 case 'daffa': 
-deff.sendMessage(from, 'Loading... ', text)
+deff.sendMessage(from, 'Jadi Babu Harus Sabar Ajg 👀 ', text)
 groups = deff.chats.array.filter(v => v.jid.endsWith('g.us'))
 privat = deff.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -2521,6 +2521,21 @@ case 'setfotomenu':
             reply(`Reply Gambar Dengan Caption ${prefix}setfotomenu`)
           	}
 			break	
+
+//=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
+case 'tagall':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+members_id = []
+teks = (args.length > 1) ? args.join(' ').trim() : ''
+teks += '\n\n'
+for (let mem of groupMembers) {
+teks += `• @${mem.jid.split('@')[0]}\n`
+members_id.push(mem.jid)
+}
+mentions(teks, members_id, true)
+break
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×					
 		case 'setthumbnail':
            if (sender.split("@")[0] != owner) return reply("Command only for owner bot")
@@ -3613,8 +3628,8 @@ var buttonss = [
 ]
 
 buttonMessagee = {
-contentText: ini_deff,
-footerText: `©DEFF` ,
+contentText: ini_bot,
+footerText: `©𝕭𝖔𝖙 • Andii∅ ༢࿔ྀ` ,
 buttons: buttonss,
 headerType: 1
 }
