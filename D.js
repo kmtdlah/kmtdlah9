@@ -1008,13 +1008,13 @@ sendButMessage(from, b, `🅚🅐🅜🅤 🅙🅐🅖🅞`, [
               {              
                 buttonId: `${prefix}tebakbendera`,
                 buttonText: {
-                  displayText: `🕹𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
+                  displayText: `🎲𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
                 },
                 type: 1,
               },{              
                 buttonId: `${prefix}limit`,
                 buttonText: {
-                  displayText: `💳𝐏𝐫𝐨𝐟𝐢𝐥𝐞`,
+                  displayText: `𝐏𝐫𝐨𝐟𝐢𝐥𝐞👀`,
                 },
                 type: 1,
               },
@@ -1031,13 +1031,13 @@ sendButMessage(from, b, `🅚🅐🅜🅤 🅙🅐🅖🅞`, [
               {              
                 buttonId: `${prefix}tebakanime`,
                 buttonText: {
-                  displayText: `🕹𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
+                  displayText: `🎲𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
                 },
                 type: 1,
               },{              
                 buttonId: `${prefix}limit`,
                 buttonText: {
-                  displayText: `💳𝐏𝐫𝐨𝐟𝐢𝐥𝐞`,
+                  displayText: `𝐏𝐫𝐨𝐟𝐢𝐥𝐞👀`,
                 },
                 type: 1,
               },
@@ -1054,13 +1054,13 @@ sendButMessage(from, b, `🅚🅐🅜🅤 🅙🅐🅖🅞`, [
               {              
                 buttonId: `${prefix}tebakgambar`,
                 buttonText: {
-                  displayText: `🕹𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
+                  displayText: `🎲𝐌𝐚𝐢𝐧 𝐋𝐚𝐠𝐢`,
                 },
                 type: 1,
               },{              
                 buttonId: `${prefix}limit`,
                 buttonText: {
-                  displayText: `💳𝐏𝐫𝐨𝐟𝐢𝐥𝐞`,
+                  displayText: `𝐏𝐫𝐨𝐟𝐢𝐥𝐞👀`,
                 },
                 type: 1,
               },
@@ -4135,7 +4135,7 @@ return reply(require('util').format(evaluate))
 }
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 if (isCmd) {
-return sendButMessage(from, `Maaf kak @${senderr.split('@')[0]} command ${command} tidak terdaftar dalam menu`, 'BACA MENUNYA\n©deff', [
+return sendButMessage(from, `Maaf kak @${senderr.split('@')[0]} command ${command} tidak terdaftar dalam menu`, 'BACA MENUNYA\n© BOT', [
 {
 "buttonId": ".menu",
 "buttonText": {
