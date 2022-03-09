@@ -1,8 +1,8 @@
 module.exports.mess = {
                limit: 'Limit kamu sudah habis', 
-	         wait: 'Please wait....',
-	          ban: 'Maaf nomor kamu sudah terbanned, Silahkan hubungi owner❗',
-			success: 'Selesai...',
+	          wait: 'Jadi Babu Harus Sabar Ajg ❗',
+	          ban: 'Hai Babu, Nomer Kamu Telah DiBaned !!! Silahkan hubungi owner❗',
+			success: 'Sudah Selesai Tod , Lama? Iyaa Maaf Ajg ❗',
 			wrongFormat: 'Format salah, coba liat lagi di menu',
 			error: {
 				  api: 'Maaf, seperti terjadi kesalahan',
